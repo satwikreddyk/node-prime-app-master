@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>First Node Js Project</title>
+        <link rel="stylesheet" href="index.css"/>
+        <script src="index.js"></script>
+        <link href="bootstrap.min.css" rel="stylesheet">
+        <script src="bootstrap.min.js"></script>
+    </head>
+    <body>
+             <h1>Employee Data</h1>
+             <div id="form">
+                <form action="employee/store" method="post">
+                    <table>
+                        <tr>
+                            <th>Eno</th>
+                            <td><input type="text" name="eno"></td>
+                        </tr>
+                        <tr>
+                            <th>Name</th>
+                            <td><input type="text" name="name"></td>
+                        </tr>
+                        <tr>
+                            <th>address</th>
+                            <td><input type="text" name="address"></td>
+                        </tr>
+                        <tr>
+                            <th>designation</th>
+                            <td><input type="text" name="designation"></td>
+                        </tr>
+                        <tr>
+                            <th>experience</th>
+                            <td><input type="text" name="experience"></td>
+                        </tr>
+                        <tr>
+                            <th>skills</th>
+                            <td><input type="text" name="skills"></td>
+                        </tr>
+                        <tr>
+                           
+                            <td style="text-align: center;" colspan=2>
+                               <button type="submit" class="btn btn-success">Add Person</button>
+                            </td>
+                        </tr>
+        
+                    </table>
+                 </form>
+        
+                </div>
+                <iframe style="border: none;height: 800px; width: 800px" src="employee/report"></iframe>
+    </body>
+</html>

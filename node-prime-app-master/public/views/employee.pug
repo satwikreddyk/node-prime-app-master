@@ -1,0 +1,27 @@
+html
+    head
+        title pug document
+        link(rel="stylesheet",href="../index.css")
+        link(rel="stylesheet",href="../bootstrap.min.css")
+    body
+        h1 Employee Data
+        div.table
+            table
+                thead
+                    th Eno
+                    th Name
+                    th Address
+                    th Designation
+                    th Experience 
+                    th Skills
+                tbody
+                    each x in employee
+                        tr
+                            td= x.eno
+                            td= x.name
+                            td= x.address 
+                            td= x.designation
+                            td= x.experience 
+                            td= x.skills
+
+            h3.alert.alert-dark Programmed by #{programmer}
